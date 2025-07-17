@@ -1,0 +1,98 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #ffe3f2, #f7f9ff);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Sakura_Card.svg/2048px-Sakura_Card.svg.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 200px;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: radial-gradient(circle, #fbc2eb, #a6c1ee);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 192, 203, 0.3);
+  position: relative;
+}
+
+header::after {
+  content: "🌸";
+  font-size: 4rem;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+header h1 {
+  font-size: 2.7rem;
+  margin-bottom: 0.5rem;
+  color: #5e35b1;
+  text-shadow: 1px 1px 3px #fff;
+}
+
+.sub {
+  font-style: italic;
+  color: #6b4c9a;
+  font-size: 1.1rem;
+}
+
+button {
+  padding: 10px 24px;
+  margin-top: 1rem;
+  border: none;
+  background-color: #ec6cb9;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  background-color: #d455a3;
+  transform: scale(1.05);
+}
+
+section {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #f3f0fa;
+  border-left: 6px solid #a18cd1;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  color: #7e57c2;
+  margin-bottom: 0.5rem;
+}
+
+.linguagens {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.linguagens div {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  border-top: 4px solid #f48fb1;
+}
