@@ -82,9 +82,9 @@ body {
   position: fixed;
   bottom: 40px;
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
-  z-index: 1000;
+  z-index: 999;
 }
 
 button {
