@@ -1,98 +1,77 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #ffe3f2, #f7f9ff);
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Sakura_Card.svg/2048px-Sakura_Card.svg.png');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 200px;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do Código ao Mistério</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Slide 1 - Abertura -->
+    <section class="slide active" id="slide1">
+      <div class="code-stream"></div>
+      <div class="centered">
+        <h1>Do Código ao Mistério</h1>
+        <p>Entre códigos modernos e mistérios milenares, encontrei minha paz.</p>
+        <button class="btn" onclick="nextSlide()">Explorar</button>
+      </div>
+    </section>
 
-header {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: radial-gradient(circle, #fbc2eb, #a6c1ee);
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(255, 192, 203, 0.3);
-  position: relative;
-}
+    <!-- Slide 2 - Meu hobby -->
+    <section class="slide" id="slide2">
+      <div class="content">
+        <h2>Meu Hobby: Programação & Hieróglifos</h2>
+        <p>A programação me traz tranquilidade e foco. É onde encontro espaço para criar, organizar e silenciar o mundo ao redor. Já os hieróglifos surgiram da minha paixão pelo Egito e da curiosidade de entender o que vai além do que os egiptólogos nos dizem. Se não lemos o idioma original, como saber a verdade?</p>
+        <div class="image-comparison">
+          <img src="html-exemplo.png" alt="Código HTML" />
+          <img src="escrita-egipcia.png" alt="Escrita egípcia" />
+        </div>
+        <button class="btn" onclick="nextSlide()">Próximo</button>
+      </div>
+    </section>
 
-header::after {
-  content: "🌸";
-  font-size: 4rem;
-  position: absolute;
-  top: -20px;
-  right: 20px;
-  animation: flutuar 3s ease-in-out infinite;
-}
+    <!-- Slide 3 - Pedra de Roseta -->
+    <section class="slide" id="slide3">
+      <div class="content">
+        <h2>A Pedra de Roseta</h2>
+        <p>A chave para decifrar os hieróglifos foi uma única pedra com o mesmo texto escrito em três sistemas: Hieróglifos, Demótico e Grego. Isso lembra como comparamos códigos em linguagens diferentes. Aos poucos, os estudiosos começaram a entender os símbolos antigos — como debugando um código desconhecido.</p>
+        <img src="pedra-roseta.jpg" alt="Imagem da Pedra de Roseta" class="wide-image" />
+        <button class="btn" onclick="nextSlide()">Próximo</button>
+      </div>
+    </section>
 
-@keyframes flutuar {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
+    <!-- Slide 4 - Evolução -->
+    <section class="slide" id="slide4">
+      <div class="content">
+        <h2>Evolução das Linguagens</h2>
+        <p>Hieróglifos evoluíram para o demótico e depois para o copta, sem que um sistema substituísse o outro — eles se complementavam. O mesmo acontece com as linguagens de programação: do Assembly ao Python, cada uma trouxe ferramentas novas. E hoje, usamos IA tanto para decifrar símbolos antigos quanto para escrever código!</p>
+        <img src="evolucao.png" alt="Evolução de escrita e código" class="wide-image" />
+        <button class="btn" onclick="nextSlide()">Próximo</button>
+      </div>
+    </section>
 
-header h1 {
-  font-size: 2.7rem;
-  margin-bottom: 0.5rem;
-  color: #5e35b1;
-  text-shadow: 1px 1px 3px #fff;
-}
+    <!-- Slide 5 - Anúbis -->
+    <section class="slide" id="slide5">
+      <div class="content">
+        <h2>Meu Deus Favorito: Anúbis</h2>
+        <div class="anubis-section">
+          <img src="anubis.png" alt="Imagem de Anúbis" class="anubis-image" />
+          <p>Anúbis era o deus da mumificação e dos mortos, protetor das tumbas, condutor das almas no além. Ele presidia a pesagem do coração na balança da verdade, determinando o destino das almas. Embora ligado à morte, também representava renascimento e proteção. Para mim, Anúbis simboliza o respeito pelo passado e o renascimento pelo conhecimento.</p>
+        </div>
+        <button class="btn" onclick="nextSlide()">Próximo</button>
+      </div>
+    </section>
 
-.sub {
-  font-style: italic;
-  color: #6b4c9a;
-  font-size: 1.1rem;
-}
+    <!-- Slide 6 - Atividade Final -->
+    <section class="slide" id="slide6">
+      <div class="content">
+        <h2>Desafio Final: Escreva seu nome em hieróglifos!</h2>
+        <p>Use a imagem abaixo como base, escreva seu nome em um papel usando os símbolos. Quem terminar primeiro com todos os símbolos certos, ganha!</p>
+        <img src="alfabeto-egipcio.png" alt="Alfabeto Egípcio" class="wide-image" />
+        <p>Boa sorte, escribas modernos! 🖋️</p>
+      </div>
+    </section>
 
-button {
-  padding: 10px 24px;
-  margin-top: 1rem;
-  border: none;
-  background-color: #ec6cb9;
-  color: white;
-  font-size: 1.1rem;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-button:hover {
-  background-color: #d455a3;
-  transform: scale(1.05);
-}
-
-section {
-  margin-top: 3rem;
-  padding: 1.5rem;
-  background-color: #f3f0fa;
-  border-left: 6px solid #a18cd1;
-  border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
-}
-
-section h2 {
-  color: #7e57c2;
-  margin-bottom: 0.5rem;
-}
-
-.linguagens {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.linguagens div {
-  flex: 1;
-  background: white;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  border-top: 4px solid #f48fb1;
-}
+    <script src="script.js"></script>
+  </body>
+</html>
