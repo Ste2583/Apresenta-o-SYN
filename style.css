@@ -122,4 +122,7 @@ button:hover {
   .slide p {
     font-size: 1rem;
   }
+  .hidden {
+  display: none;
+}
 }
