@@ -1,23 +1,22 @@
-let currentSlide = 0;
 const slides = document.querySelectorAll(".slide");
+let current = 0;
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
-    slide.classList.remove("active");
-    if (i === index) slide.classList.add("active");
+    slide.classList.add("hidden");
+    if (i === index) slide.classList.remove("hidden");
   });
 }
 
-function nextSlide() {
-  currentSlide++;
-  if (currentSlide >= slides.length) currentSlide = 0;
-  showSlide(currentSlide);
-}
+showSlide(current);
 
-// Inicializa o primeiro slide
-showSlide(currentSlide);
-
-// Adiciona evento aos botões de próxima seção
-document.querySelectorAll(".btn").forEach(btn => {
-  btn.addEventListener("click", nextSlide);
+document.getElementById("next").addEventListener("click", () => {
+  current = (current + 1) % slides.length;
+  showSlide(current);
 });
+
+document.getElementById("prev").addEventListener("click", () => {
+  current = (current - 1 + slides.length) % slides.length;
+  showSlide(current);
+});
+
