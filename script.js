@@ -1,22 +1,16 @@
 const slides = document.querySelectorAll(".slide");
-let current = 0;
+let currentSlide = 0;
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
-    slide.classList.add("hidden");
-    if (i === index) slide.classList.remove("hidden");
+    slide.classList.toggle("hidden", i !== index);
   });
 }
 
-showSlide(current);
-
-document.getElementById("next").addEventListener("click", () => {
-  current = (current + 1) % slides.length;
-  showSlide(current);
+document.getElementById("nextBtn").addEventListener("click", () => {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
 });
 
-document.getElementById("prev").addEventListener("click", () => {
-  current = (current - 1 + slides.length) % slides.length;
-  showSlide(current);
-});
-
+// Mostrar o primeiro slide ao carregar
+showSlide(currentSlide);
