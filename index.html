@@ -1,65 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meus Hobbies: Programação e Hieróglifos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meus Hobbies: Programação & Hieróglifos</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <section id="slide1" class="slide">
-    <h1>Bem-vindo ao meu universo!</h1>
-    <p>Meus hobbies unem o mundo da programação e o fascínio pelos hieróglifos egípcios.</p>
-    <div class="code-hieroglyphs">
-      <img src="imagens/html-code.png" alt="Código HTML" />
-      <img src="imagens/hieroglifo.png" alt="Texto em hieróglifos" />
+  <!-- Slide 1 - Abertura -->
+  <div class="slide slide1">
+    <h1>Meus Hobbies: Programação & Hieróglifos</h1>
+    <p>Do código moderno ao mistério do antigo Egito</p>
+    <div class="visual">
+      <img src="imagens/codigo.png" alt="Código" />
+      <img src="imagens/hieroglifo.png" alt="Hieróglifo" />
     </div>
-    <div class="controls">
-    <button id="next">Avançar ▶</button>
   </div>
-  </section>
 
-  <section id="slide2" class="slide hidden">
-    <h2>Pedra de Roseta: a chave para decifrar os hieróglifos</h2>
-    <img src="imagens/rosetta-stone.jpg" alt="Pedra de Roseta" />
-    <p>Graças à Pedra de Roseta, contendo hieróglifos, demótico e grego, foi possível começar a decifrar a escrita egípcia. Isso lembra como na programação deciframos padrões e linguagens!</p>
-  </section>
-
-  <section id="slide3" class="slide hidden">
-    <h2>Evolução dos hieróglifos e da programação</h2>
-    <p>Assim como os hieróglifos evoluíram para o demótico e outras formas, a programação também passou de códigos complexos a linguagens mais acessíveis, com ajuda de IA.</p>
-    <div class="comparacao">
-      <img src="imagens/hieroglifo-evolucao.png" alt="Evolução dos hieróglifos" />
-      <img src="imagens/evolucao-codigo.png" alt="Evolução do código" />
+  <!-- Slide 2 - Significado Pessoal -->
+  <div class="slide slide2 hidden">
+    <h2>Por que Programação e Hieróglifos?</h2>
+    <p>Programar me acalma, me organiza mentalmente e libera minha criatividade.</p>
+    <p>Já os hieróglifos me conectam com a cultura egípcia, com a busca pela verdade e com o mistério do desconhecido.</p>
+    <div class="visual">
+      <img src="imagens/html-vs-hieroglifo.png" alt="HTML e Hieróglifo" />
     </div>
-  </section>
+  </div>
 
-  <section id="slide4" class="slide hidden">
-    <h2>Deus Anúbis</h2>
-    <div class="anubis">
-      <img src="imagens/anubis.png" alt="Deus Anúbis" />
-      <div>
-        <p>Anúbis era o deus da mumificação, protetor das tumbas e guia das almas no além. Ele pesava o coração dos mortos contra a pena de Ma'at, decidindo seu destino eterno.</p>
-        <p>Embora ligado à morte, também representa regeneração, justiça e proteção aos órfãos.</p>
-      </div>
-    </div>
-  </section>
+  <!-- Slide 3 - Pedra de Roseta -->
+  <div class="slide slide3 hidden">
+    <h2>A Pedra de Roseta</h2>
+    <p>A chave para decifrar os hieróglifos. Ela contém três inscrições: hieróglifos, demótico e grego.</p>
+    <p>Assim como a Pedra de Roseta ajudou a decifrar línguas, a programação usa lógica e padrões para decifrar o mundo digital.</p>
+    <img src="imagens/pedra-roseta.png" alt="Imagem da Pedra de Roseta" />
+  </div>
 
-  <section id="slide5" class="slide hidden">
-    <h2>Vamos praticar?</h2>
-    <p>Escreva seu nome em hieróglifos usando esta imagem como referência:</p>
-    <img src="imagens/alfabeto-egipcio.jpg" alt="Alfabeto egípcio" />
-    <p>Quem terminar primeiro, vence!</p>
-  </section>
+  <!-- Slide 4 - Evolução -->
+  <div class="slide slide4 hidden">
+    <h2>A Evolução de Dois Mundos</h2>
+    <p>Os hieróglifos evoluíram para o demótico e depois para o copta. A linguagem escrita nunca se extinguiu, apenas se adaptou.</p>
+    <p>Na programação, também evoluímos: do Assembly ao Python, da escrita pura ao auxílio da inteligência artificial.</p>
+    <img src="imagens/evolucao.png" alt="Evolução das linguagens" />
+  </div>
 
+  <!-- Slide 5 - Anúbis e Final -->
+  <div class="slide slide5 hidden">
+    <h2>O Deus Anúbis</h2>
+    <img src="imagens/anubis.png" alt="Anúbis" class="anubis-img"/>
+    <p>Guardião das tumbas, juiz dos mortos, mestre da mumificação e símbolo de renascimento.</p>
+    <p>Anúbis representa a sabedoria do além, a transição e a renovação. Seu papel é guiar e proteger.</p>
+    <br />
+    <h3>Vamos brincar?</h3>
+    <p>Use o alfabeto egípcio abaixo e escreva seu nome em um papel. Quem terminar primeiro, vence!</p>
+    <img src="imagens/alfabeto-egipcio.png" alt="Alfabeto Egípcio" />
+  </div>
+
+  <!-- Botão de navegação -->
   <div class="controls">
-    <button id="prev">◀ Voltar</button>
-    <button id="next">Avançar ▶</button>
+    <button id="nextBtn">Seguinte</button>
   </div>
 
   <script src="script.js"></script>
 </body>
-
 </html>
+
